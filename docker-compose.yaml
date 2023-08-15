@@ -1,0 +1,7 @@
+services:
+  fibo:
+    container_name: fibo
+    image: gcc
+    volumes:
+      - .:/app
+    

@@ -57,15 +57,15 @@ ll method_2(ll n) {
 // Dynamic programming (bottom-up) -> iterative
 ll method_3(ll n) {
   if(n <= 2) return n;
-  ll arr[LIMIT + 1];
+  ll arr[3];
   arr[0] = 0;
   arr[1] = 1;
   arr[2] = 2;
   for(ll i = 3; i <= n; i++) {
-    arr[i] = arr[i - 2] + arr[i - 3];
+    ll newValue = arr[0] + arr[1];
+    arr[0] = arr[1];
+    arr[1] = arr[2];
+    arr[2] = newValue;
   }
-  return arr[n];
+  return arr[2];
 }
-
-// 1248304960
-// 2078907610

@@ -42,8 +42,7 @@ In question 2 I have used 3 methods
 
 - `Bottom-up Dynamic programming` using `Iteration` which is
   - O(n) Time complexity
-  - O(n) Space complexity
-  - Note: We can enhance the space complexity to be O(1) if we used just 2 variables represents the f(n-3) and f(n-2)
+  - O(1) Space complexity
 
 
   

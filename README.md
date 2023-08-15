@@ -24,7 +24,7 @@ This code for bitnine intenship
 
 - To run question_2, hit the command
   ```ssh
-    sudo docker compose run question_1 sh -c "gcc -w /app/question_2.c -o /app/a.out && /app/a.out" 
+    sudo docker compose run question_2 sh -c "gcc -w /app/question_2.c -o /app/a.out && /app/a.out" 
   ```
 
 ## QUESTION 2 COMPARISON

@@ -5,7 +5,7 @@
 using namespace std;
 
 #define ll long long
-
+#define LIMIT 90
 
 unordered_map<ll, ll> memo;
 
@@ -52,9 +52,16 @@ int main() {
   calc(sub);
   calc(fibo);
 
-  ll limit;
+  ll limit = LONG_MAX;
   cout << "Enter the limit of fibonacci sequence: ";
   cin >> limit;
+  while(limit > LIMIT){
+    cout << "If limit is greater than "<<LIMIT<<", The values will be very huge\n";
+    cout << "Please, insert a number less than or equal "<<LIMIT<<endl;
+    cout << "Enter the limit of fibonacci sequence: ";
+    cin >> limit;
+
+  }
   cout << "The fibonancci sequence till " << limit << " is:\n";
   calculateFibo(limit);
   return 0;

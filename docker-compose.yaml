@@ -1,6 +1,13 @@
 services:
-  fibo:
-    container_name: fibo
+  question_1:
+    container_name: question_1
+    image: gcc
+    volumes:
+      - .:/app
+    entrypoint: sh -c "g++ -w /app/question_1.cpp -o /app/a.out && /app/a.out"
+    
+  question_2:
+    container_name: question_2
     image: gcc
     volumes:
       - .:/app
